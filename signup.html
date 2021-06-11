@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    nav{
+        display: grid;
+        height: 80px;
+        background-color:#0AA198;
+        align-items: center;
+        padding: 0 10px;
+        color: white;
+    }
+    .container{
+        display: grid;
+        box-shadow: 1px 3px 5px grey;
+        place-items: center;
+        width: max-content;
+        padding: 20px 30px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .big-container{
+        display: grid;
+        place-items: center;
+        margin-top: 50px;
+    }
+    .container>h2{
+        margin: 20px 0;
+        color: #0AA198;
+    }
+    input, select{
+        padding: 8px;
+        margin: 5px 10px;
+        border: solid 1px grey;
+        border-radius: 5px;
+        width: 230px;
+    }
+    input:focus{
+        border: solid 1px #0AA198;
+        border-radius: 5px;
+        outline: none;
+    }
+    button{
+        padding: 10px;
+        border: solid 1px #0AA198;
+        border-radius: 5px;
+        background-color: #0AA198;
+        color: white;
+        margin: 20px 10px 10px 10px;
+        width: 200px;
+        font-size: medium;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+</style>
+
+<body>
+    <nav><h2>DAC-J</h2></nav>
+    <div class="big-container">
+        <div class="container">
+            <h2>Signup</h2>
+            <form action="">
+                <div>
+                    <input type="text" placeholder="Full name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="number" placeholder="Phone number">
+                    <input type="text" placeholder="Address">
+                </div>
+                <div>
+                    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Date of birth">
+                    <input type="text" placeholder="Place of birth">
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Sex</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                    <input type="text" placeholder="Nationality">
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Faculty</option>
+                        <option value="">Faculty of Engineering and Technology</option>
+                        <option value="">Faculty of Social and Management Science</option>
+                        <option value="">Faculty of Agriculture and Vertinary Medicine</option>
+                        <option value="">Faculty of Law and Political Science</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Department</option>
+                        <option value="">Department of Computer Engineering</option>
+                        <option value="">Department of Electrical Engineering</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" placeholder="Guardian's name">
+                    <input type="text" placeholder="Guardian's address">
+                </div>
+                <button><a href="login.html">Create account</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

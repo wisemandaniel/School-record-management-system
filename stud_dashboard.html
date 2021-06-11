@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    nav{
+        display: grid;
+        height: 13vh;
+        background-color:#0AA198;
+        align-items: center;
+        padding: 0 10px;
+        color: white;
+    }
+
+    .card{      
+        display: grid;
+        box-shadow: 2px 3px 5px grey;
+        border-radius: 5px;
+        height: 150px;
+        width: 250px;
+        padding: 30px;
+        margin: 0px 30px 0px 30px;
+        place-items: center;
+        text-align: center;
+        
+        
+    }
+
+    .card:hover{
+        /* height: 152px; */
+        /* width: 252px; */
+        box-shadow: 2px 3px 5px #0A5550;
+        font-weight: bold;
+        color: #0A5550;
+        cursor: pointer;
+    }
+
+    .a{ 
+        grid-area: a;
+        box-shadow: 2px 3px 5px grey;
+        margin-top: 80px;
+    }
+
+    .b{     
+        grid-area: b;
+        box-shadow: 2px 3px 5px grey;
+        margin-top: 80px;
+    }
+
+    .c{    
+        grid-area: c;
+        box-shadow: 2px 3px 5px grey;
+        margin-top: 80px;
+    }
+
+    .d .e .f{
+        grid-area: c;
+        box-shadow: 2px 3px 5px grey;
+    }
+
+    .side-bar{
+        display: grid;
+        grid-area: side-bar;
+        width: 20vw;
+        background-color: #0A5550;
+        height: 87vh;        
+    }
+
+    .avatar{
+        display: grid;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 20px 0 0 0;
+    }
+
+    .info{
+        text-align: left;
+        color: white;
+        font-size: small;
+        padding: 10px;
+    }
+
+    .card-container{
+        display: grid;
+        grid-area: card-container;
+        grid-template-areas: 
+        'a b c'
+        'd e f'
+        ;
+        width: 70vw;
+    }
+
+    .big-container{
+        display: grid;
+        grid-template-areas: 'side-bar card-container';
+    }
+
+    .side-container{
+        display: grid;
+        justify-items: center;
+    }
+
+    p{
+        padding: 5px;
+        color: white;
+    }
+
+
+</style>
+
+<body>
+    <nav><h2>DAC-J</h2></nav>
+    <div class="big-container">
+        <div class="side-bar">
+            <div class="side-container">
+                <div class="avatar"><img src="./omen png.png" height="150px" alt=""></div>
+                <p>Peng Boris</p>
+                <div class="info">
+                    <p>Faculty of Engineering and Technology</p><br>
+                    <p>Department of computer engineering</p><br>
+                    <p>Email: arnaudnjita@gmail.com</p><br>
+                    <p>Tel: 671735572</p><br>
+                    <p>Nationality: Cameroonian</p><br>
+                    <p>Log out</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card a">Pay fees</div>
+            <div class="card b">Register courses</div>
+            <div class="card c">View registered courses</div>
+            <div class="card d">View results</div>
+            <div class="card e">Transaction details</div>
+            <div class="card f">View timetable</div>
+        </div>
+    </div>
+</body>
+</html>
