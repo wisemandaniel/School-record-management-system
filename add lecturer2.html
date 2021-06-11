@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Add lecturer courses</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="add lecturer2.css">
+   
+    </head>
+    <body>
+        <nav class="navbar-fixed-top">
+            <span class="navbar-brand">DAC-J</span>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <form action="">
+            <div class="container">
+            <h2>Add Lecturer Courses</h2>
+            <br>
+            <div class="form-group" >
+            <label for="department">Select Department</label>
+            <select class="form-control" id="department" name="department">
+                <option value="1">Computer Engineering</option>
+                <option value="2">Electrical Engineering</option>
+            </select>
+        </div>
+            <br>
+        <div class="form-group" id="ccourse">
+            <label>Select Computer Courses</label>
+            <select class="form-control" name="ecourse">
+                <option id="soft">Software Engineering and Design-CEF424</option>
+                <option id="int">Internet Programming-CEF440</option>
+                <option>Digital Image Processing-CEF464</option>
+                <option>Artificial Intelligence-CEF444</option>
+                <option>Cloud Computing-CEF460</option>
+                <option>XML Validation-CEF422</option>
+            </select>
+            </div>
+            <br>
+            <div class="form-group" id="ecourse" >
+    
+            <label>Select Electrical Courses</label>
+            <select class="form-control" name="ecourse">
+                <option>Feedback system-EEF424</option>
+                <option>Signals and System-EEF440</option>
+                <option>Analog Electronics-EEF464</option>
+                <option>Digital Electronics-EEF444</option>
+                <option>Circuit Analysis-EEF460</option>
+                <option>Microcontrollers-EEF422</option>
+            </select>
+            </div>
+            <br>
+            <br>
+            <div class="course" id="course">
+                <h4>Courses Selected</h4></div>
+        </div>
+        </form>
+        <script type="text/javascript" src="add lecturer2.js"></script>
+    </body>
+</html>

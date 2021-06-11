@@ -1,0 +1,55 @@
+nav
+{
+    background-color:#0AA198 ;
+    height: 80px;
+}
+li 
+{
+    font-size: 18px;
+    margin-right: 20px;
+    padding-top: 10px;
+
+}
+a
+{
+   color: cornsilk;
+}
+.navbar-brand
+{
+    padding-top: 30px;
+    color: white;
+}
+h2
+{
+    color:#0AA198 ;
+    text-align: center;
+    font-weight: bold;
+}
+.pro
+{
+    text-align: center;
+}
+.btn-primary
+{
+    width: 200px;
+    border-radius: 25px;
+    background-color: #0AA198;
+    padding: 15px;
+    margin-bottom: 7px;
+}
+.container
+{
+    width: 700px;
+    box-shadow: 2px 3px 5px  gray;
+    border-radius: 5px;
+}
+form
+{
+    margin-top: 70px;
+}
+.dep
+{
+    margin-left: 300px;
+
+}
+

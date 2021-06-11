@@ -1,0 +1,55 @@
+nav
+{
+    background-color:#0AA198 ;
+    height: 80px;
+}
+li 
+{
+    font-size: 18px;
+    margin-right: 20px;
+    padding-top: 10px;
+
+}
+a
+{
+   color: cornsilk;
+}
+.navbar-brand
+{
+    padding-top: 30px;
+    color: white;
+}
+.image
+{
+    background-image: url('school.jpg');
+    background-size: cover;
+    height: 550px;
+    margin-top: 80px;
+}
+.jumbotron
+{
+    background-color: rgba(5, 3, 10, 0.6);
+    height: 550px;
+}
+.welcome
+{
+    font-size: 60px;
+    text-shadow: 2px 3px 3px blue;
+    color: white;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 100px;
+}
+.button
+{
+    word-spacing: 150px;
+
+}
+.btn-primary
+{
+    width: 200px;
+    border-radius: 20px;
+    background-color: #0AA198;
+    padding: 15PX;
+}
